@@ -10,6 +10,16 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./css/styles.css */ \"./src/css/styles.css\");\n\nconst email = document.querySelector('#email');\nconst country = document.querySelector('#country');\nconst zip = document.querySelector('#zip');\nconst psw = document.querySelector('#psw');\nconst pswConf = document.querySelector('#psw-conf');\nemail.addEventListener('input', () => {\n  if (email.validity.typeMismatch) {\n    email.reportValidity();\n    email.style.borderBottom = '1px solid #ff0000';\n  } else if (email.validity.valueMissing) {\n    email.setCustomValidity('<error> Please fill in this input field </error>');\n    email.reportValidity();\n    email.style.borderBottom = '1px solid #ff0000';\n  } else {\n    email.setCustomValidity('');\n    email.style.borderBottom = '1px solid #008000';\n  }\n});\ncountry.addEventListener('input', () => {\n  if (country.validity.valueMissing) {\n    country.setCustomValidity('<error> Please fill out this field </error>');\n    country.reportValidity();\n    country.style.borderBottom = '1px solid #ff0000';\n  } else {\n    country.setCustomValidity('');\n    country.style.borderBottom = '1px solid #008000';\n  }\n});\nzip.addEventListener('input', () => {\n  if (zip.validity.valueMissing) {\n    zip.setCustomValidity('<error> Please fill out this field </error>');\n    zip.reportValidity();\n    zip.style.borderBottom = '1px solid #ff0000';\n  } else {\n    zip.setCustomValidity('');\n    zip.style.borderBottom = '1px solid #008000';\n  }\n});\npsw.addEventListener('input', () => {\n  if (psw.value.length < 8) {\n    psw.setCustomValidity('<error> Password must contain between 8 and 16 characters </error>');\n    psw.reportValidity();\n    psw.style.borderBottom = '1px solid #ff0000';\n  } else if (psw.value.length > 16) {\n    psw.setCustomValidity('<error> Password must contain between 8 and 16 characters </error>');\n    psw.reportValidity();\n    psw.style.borderBottom = '1px solid #ff0000';\n  } else {\n    psw.setCustomValidity('');\n    psw.style.borderBottom = '1px solid #008000';\n  }\n});\npswConf.addEventListener('input', () => {\n  if (pswConf.value !== psw.value) {\n    pswConf.setCustomValidity('<error> These two passwords do not match </error>');\n    pswConf.reportValidity();\n    pswConf.style.borderBottom = '1px solid #ff0000';\n  } else {\n    pswConf.setCustomValidity('');\n    pswConf.style.borderBottom = '1px solid #008000';\n  }\n});\n\n//# sourceURL=webpack://form-validation/./src/index.js?");
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/css/styles.css":
 /*!******************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./src/css/styles.css ***!
@@ -117,16 +127,6 @@ eval("\n\n/* istanbul ignore next  */\nfunction apply(styleElement, options, obj
 /***/ ((module) => {
 
 eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElement) {\n  if (styleElement.styleSheet) {\n    styleElement.styleSheet.cssText = css;\n  } else {\n    while (styleElement.firstChild) {\n      styleElement.removeChild(styleElement.firstChild);\n    }\n\n    styleElement.appendChild(document.createTextNode(css));\n  }\n}\n\nmodule.exports = styleTagTransform;\n\n//# sourceURL=webpack://form-validation/./node_modules/style-loader/dist/runtime/styleTagTransform.js?");
-
-/***/ }),
-
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./css/styles.css */ \"./src/css/styles.css\");\n\n\nconst email = document.querySelector('#email');\nconst country = document.querySelector('#country');\nconst zip = document.querySelector('#zip');\nconst psw = document.querySelector('#psw');\nconst pswConf = document.querySelector('#psw-conf');\n\nemail.addEventListener('input', () => {\n  if (email.validity.typeMismatch) {\n    email.reportValidity();\n    email.style.borderBottom = '1px solid #ff0000';\n  } else if (email.validity.valueMissing) {\n    email.setCustomValidity('<error> Please fill in this input field </error>');\n    email.reportValidity();\n    email.style.borderBottom = '1px solid #ff0000';\n  } else {\n    email.setCustomValidity('');\n    email.style.borderBottom = '1px solid #008000';\n  }\n});\n\ncountry.addEventListener('input', () => {\n  if (country.validity.valueMissing) {\n    country.setCustomValidity('<error> Please fill out this field </error>');\n    country.reportValidity();\n    country.style.borderBottom = '1px solid #ff0000';\n  } else {\n    country.setCustomValidity('');\n    country.style.borderBottom = '1px solid #008000';\n  }\n});\n\nzip.addEventListener('input', () => {\n  if (zip.validity.valueMissing) {\n    zip.setCustomValidity('<error> Please fill out this field </error>');\n    zip.reportValidity();\n    zip.style.borderBottom = '1px solid #ff0000';\n  } else {\n    zip.setCustomValidity('');\n    zip.style.borderBottom = '1px solid #008000';\n  }\n});\n\npsw.addEventListener('input', () => {\n  if (psw.value.length < 8) {\n    psw.setCustomValidity('<error> Password must contain between 8 and 16 characters </error>');\n    psw.reportValidity();\n    psw.style.borderBottom = '1px solid #ff0000';\n  } else if (psw.value.length > 16) {\n    psw.setCustomValidity('<error> Password must contain between 8 and 16 characters </error>');\n    psw.reportValidity();\n    psw.style.borderBottom = '1px solid #ff0000';\n  } else {\n    psw.setCustomValidity('');\n    psw.style.borderBottom = '1px solid #008000';\n  }\n});\n\npswConf.addEventListener('input', () => {\n  if (pswConf.value !== psw.value) {\n    pswConf.setCustomValidity('<error> These two passwords do not match </error>');\n    pswConf.reportValidity();\n    pswConf.style.borderBottom = '1px solid #ff0000';\n  } else {\n    pswConf.setCustomValidity('');\n    pswConf.style.borderBottom = '1px solid #008000';\n  }\n});\n\n\n//# sourceURL=webpack://form-validation/./src/index.js?");
 
 /***/ }),
 
