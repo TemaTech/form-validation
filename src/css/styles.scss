@@ -1,0 +1,81 @@
+@import url(https://fonts.googleapis.com/css?family=IBM+Plex+Mono:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic);
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: rgb(0, 0, 0);
+  height: 100vh;
+  font-family: 'IBM Plex Mono', monospace;
+  color: #00ff00;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.logo {
+  height: 300px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  content: url("/src/img/code-solid.svg");
+  height: 200px;
+  width: 200px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+  width: fit-content;
+}
+
+form input {
+  outline: none;
+  border: none;
+  background: rgb(27, 27, 27);
+  padding: 5px;
+  border-radius: 3px;
+  color: rgb(0, 255, 0);
+  font-family: inherit;
+  width: 200px;
+  transition: border-bottom 300ms ease-in-out;
+  border-bottom: 1px solid rgb(95, 95, 95);
+}
+
+form input::placeholder {
+  color: rgb(60, 60, 60);
+}
+
+form button {
+  border: none;
+  outline: none;
+  background: rgb(0, 255, 0);
+  color: black;
+  padding: 10px;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: box-shadow 300ms ease-in-out;
+}
+
+form button:hover {
+  cursor: pointer;
+  box-shadow: 0px 5px 10px rgba(0, 255, 0, 0.25);
+}
